@@ -5,6 +5,8 @@
 A firewall is a network security mechanism that monitors and controls incoming and outgoing traffic based on predefined security rules.
 The purpose of this task was to gain practical experience in configuring firewall rules to block and allow specific network ports using the built-in Windows firewall.
 
+
+
 🎯 2. Objective:
 
 The main objectives of this task were:
@@ -16,6 +18,8 @@ The main objectives of this task were:
 3.To verify firewall configuration
 
 4.To learn how to manage and remove firewall rules
+
+
 
 🛠 3. Tools and Environment:
 
@@ -38,7 +42,7 @@ This interface provides advanced control over inbound and outbound rules.
 The existing inbound rules were examined to understand the default configuration and ensure no conflicts with the new rules.
 
 
-5.Creating a Rule to Block Port 23 (Telnet):
+6.Creating a Rule to Block Port 23 (Telnet):
 
 A new inbound rule was created with the following configuration:
 
@@ -57,7 +61,7 @@ A new inbound rule was created with the following configuration:
 This rule prevents Telnet traffic, which is insecure because it transmits data in plain text.
 
 
-6.Creating a Rule to Allow Port 22 (SSH):
+7.Creating a Rule to Allow Port 22 (SSH):
 
 Another inbound rule was configured:
 
@@ -76,13 +80,13 @@ Another inbound rule was configured:
 This ensures secure remote access via SSH is permitted.
 
 
-7.Removing the Test Rule:
+8.Removing the Test Rule:
 
 After verifying the configuration, the Telnet block rule was removed to restore the system to its original state and demonstrate rule management capability.
 
 
 
-📊 8. Results:
+📊9. Results:
 
 1.The firewall rules were successfully configured and verified:
 
@@ -94,7 +98,8 @@ After verifying the configuration, the Telnet block rule was removed to restore 
 
 The test rule was successfully deleted
 
-🧠 9. Discussion:
+
+🧠10. Discussion:
 
 Firewalls are a critical component of a layered security approach.
 Blocking unused or insecure ports reduces the attack surface, while allowing only required services ensures controlled access.
@@ -102,7 +107,7 @@ Blocking unused or insecure ports reduces the attack surface, while allowing onl
 Disabling Telnet is considered a best practice because it lacks encryption, whereas SSH provides secure communication.
 
 
-📚 10. Key Learnings:
+📚11. Key Learnings:
 
 1.Practical understanding of firewall configuration
 
