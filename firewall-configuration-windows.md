@@ -1,13 +1,13 @@
-**Setup and Use a Firewall (Windows)**
+## Setup and Use a Firewall (Windows)
 
-📌 1. Introduction:
+## 📌 1. Introduction:
 
 A firewall is a network security mechanism that monitors and controls incoming and outgoing traffic based on predefined security rules.
 The purpose of this task was to gain practical experience in configuring firewall rules to block and allow specific network ports using the built-in Windows firewall.
 
 
 
-🎯 2. Objective:
+## 🎯 2. Objective:
 
 The main objectives of this task were:
 
@@ -21,7 +21,7 @@ The main objectives of this task were:
 
 
 
-🛠 3. Tools and Environment:
+## 🛠 3. Tools and Environment:
 
 Operating System: Microsoft Windows
 
@@ -30,19 +30,19 @@ Tool Used: Windows Defender Firewall with Advanced Security
 Testing Tool: Command Prompt
 
 
-⚙️ 4. Methodology:
+## ⚙️ 4. Methodology:
 
 Accessing Firewall Console:
 The firewall management console was opened through the Start menu by launching Windows Defender Firewall with Advanced Security. 
 This interface provides advanced control over inbound and outbound rules.
 
 
-5.Reviewing Existing Rules:
+## 5.Reviewing Existing Rules:
 
 The existing inbound rules were examined to understand the default configuration and ensure no conflicts with the new rules.
 
 
-6.Creating a Rule to Block Port 23 (Telnet):
+## 6.Creating a Rule to Block Port 23 (Telnet):
 
 A new inbound rule was created with the following configuration:
 
@@ -61,7 +61,7 @@ A new inbound rule was created with the following configuration:
 This rule prevents Telnet traffic, which is insecure because it transmits data in plain text.
 
 
-7.Creating a Rule to Allow Port 22 (SSH):
+## 7.Creating a Rule to Allow Port 22 (SSH):
 
 Another inbound rule was configured:
 
@@ -80,13 +80,13 @@ Another inbound rule was configured:
 This ensures secure remote access via SSH is permitted.
 
 
-8.Removing the Test Rule:
+## 8.Removing the Test Rule:
 
 After verifying the configuration, the Telnet block rule was removed to restore the system to its original state and demonstrate rule management capability.
 
 
 
-📊9. Results:
+## 📊9. Results:
 
 1.The firewall rules were successfully configured and verified:
 
@@ -99,7 +99,7 @@ After verifying the configuration, the Telnet block rule was removed to restore 
 The test rule was successfully deleted
 
 
-🧠10. Discussion:
+## 🧠10. Discussion:
 
 Firewalls are a critical component of a layered security approach.
 Blocking unused or insecure ports reduces the attack surface, while allowing only required services ensures controlled access.
@@ -107,7 +107,7 @@ Blocking unused or insecure ports reduces the attack surface, while allowing onl
 Disabling Telnet is considered a best practice because it lacks encryption, whereas SSH provides secure communication.
 
 
-📚11. Key Learnings:
+## 📚11. Key Learnings:
 
 1.Practical understanding of firewall configuration
 
@@ -119,7 +119,8 @@ Disabling Telnet is considered a best practice because it lacks encryption, wher
 
 5.Awareness of insecure protocols like Telnet
 
-
+## 👨‍💻 Author
+**Himanshu Vats** 
 
 
 
